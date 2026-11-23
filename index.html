@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="description" content="КУОФ — аренда офисов, складов и производственных помещений в Каменске-Уральском по адресу ул. Ленина, 95.">
+  <title>КУОФ — коммерческая недвижимость в Каменске-Уральском</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="photos.css?v=carousel-2">
+  <script src="catalog.js?v=carousel-2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#main" aria-label="КУОФ, к началу страницы">
+        <img src="assets/logo-dark.png" alt="КУОФ" width="112" height="30">
+        <span>Коммерческая<br>недвижимость</span>
+      </a>
+      <nav class="main-nav" aria-label="Основные разделы">
+        <a href="#catalog">Помещения</a>
+        <a href="#site">Территория</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+79122850046"><span class="icon icon-phone" aria-hidden="true"></span><span>+7 912 285 00 46</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="location"><span class="icon icon-pin" aria-hidden="true"></span> Каменск-Уральский, ул. Ленина, 95</p>
+          <h1 id="hero-title" data-type-line>Аренда помещений<br class="hero-break"> для&nbsp;бизнеса</h1>
+          <p class="hero-description" data-type-line>Офисы, склады и производственные цеха в центре старой части города.</p>
+          <a class="button button-primary" href="#catalog">Смотреть помещения <span class="icon icon-down" aria-hidden="true"></span></a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img class="hero-image" src="assets/campus-768.webp" srcset="assets/campus-768.webp 768w, assets/campus-1536.webp 1536w"
+          sizes="100vw" width="1536" height="1024" fetchpriority="high"
+          alt="Вид сверху на корпуса промышленной площадки, склады и подъездные проезды">
+        <figcaption>Иллюстрация промышленной площадки</figcaption>
+      </figure>
+    </section>
+
+    <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="wrap">
+        <span class="category-anchor" id="office" aria-hidden="true"></span>
+        <span class="category-anchor" id="storage" aria-hidden="true"></span>
+        <span class="category-anchor" id="production" aria-hidden="true"></span>
+        <div class="catalog-heading">
+          <div>
+            <h2 id="catalog-title">Помещения в аренду</h2>
+            <p>Примеры помещений. Фотографии и условия добавим позже.</p>
+          </div>
+          <fieldset class="category-select" data-category-select hidden>
+            <legend class="sr-only">Тип помещения</legend>
+            <label><input type="radio" name="category" value="office" checked><span>Офисы</span></label>
+            <label><input type="radio" name="category" value="storage"><span>Склады</span></label>
+            <label><input type="radio" name="category" value="production"><span>Производство</span></label>
+          </fieldset>
+        </div>
+
+        <section class="listing-grid" id="office-cards" data-category-panel="office" aria-label="Офисы" tabindex="0">
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/office-window.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Офис с окном"
+                aria-expanded="false" aria-controls="office-window-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="office-window-summary">Для небольшой команды.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="office-window-title">Офис с окном</h3>
+              <a class="listing-card__action" href="property.html?id=office-window" aria-describedby="office-window-title">Подробнее</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/office-tile.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Офис с плиточным полом"
+                aria-expanded="false" aria-controls="office-tile-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="office-tile-summary">Для приёма клиентов.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="office-tile-title">Офис с плиточным полом</h3>
+              <a class="listing-card__action" href="property.html?id=office-tile" aria-describedby="office-tile-title">Подробнее</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/office-corner.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Угловой офис"
+                aria-expanded="false" aria-controls="office-corner-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="office-corner-summary">Для кабинета или переговорной.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="office-corner-title">Угловой офис</h3>
+              <a class="listing-card__action" href="property.html?id=office-corner" aria-describedby="office-corner-title">Подробнее</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="listing-grid" id="storage-cards" data-category-panel="storage" aria-label="Склады" tabindex="0">
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/storage-columns.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Склад с колоннами"
+                aria-expanded="false" aria-controls="storage-columns-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="storage-columns-summary">Для хранения на стеллажах.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="storage-columns-title">Склад с колоннами</h3>
+              <a class="listing-card__action" href="property.html?id=storage-columns" aria-describedby="storage-columns-title">Подробнее</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/storage-window.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Склад с окном"
+                aria-expanded="false" aria-controls="storage-window-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="storage-window-summary">Для хранения небольших партий.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="storage-window-title">Склад с окном</h3>
+              <a class="listing-card__action" href="property.html?id=storage-window" aria-describedby="storage-window-title">Подробнее</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/storage-gate.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Склад с воротами"
+                aria-expanded="false" aria-controls="storage-gate-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="storage-gate-summary">Для приёмки и отгрузки.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="storage-gate-title">Склад с воротами</h3>
+              <a class="listing-card__action" href="property.html?id=storage-gate" aria-describedby="storage-gate-title">Подробнее</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="listing-grid" id="production-cards" data-category-panel="production" aria-label="Производство" tabindex="0">
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/workshop-columns.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Цех с колоннами"
+                aria-expanded="false" aria-controls="workshop-columns-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="workshop-columns-summary">Для размещения станков.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="workshop-columns-title">Цех с колоннами</h3>
+              <a class="listing-card__action" href="property.html?id=workshop-columns" aria-describedby="workshop-columns-title">Подробнее</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/workshop-panel.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Цех с электрощитом"
+                aria-expanded="false" aria-controls="workshop-panel-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="workshop-panel-summary">Для подбора места под оборудование.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="workshop-panel-title">Цех с электрощитом</h3>
+              <a class="listing-card__action" href="property.html?id=workshop-panel" aria-describedby="workshop-panel-title">Подробнее</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="listing-card__visual">
+              <img src="assets/preview/workshop-open.svg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+              <button class="listing-card__toggle" type="button" aria-label="Краткое описание: Цех открытой планировки"
+                aria-expanded="false" aria-controls="workshop-open-summary" hidden><span aria-hidden="true"></span></button>
+              <p class="listing-card__description" id="workshop-open-summary">Для сборки и комплектации.</p>
+            </div>
+            <div class="listing-card__body">
+              <h3 id="workshop-open-title">Цех открытой планировки</h3>
+              <a class="listing-card__action" href="property.html?id=workshop-open" aria-describedby="workshop-open-title">Подробнее</a>
+            </div>
+          </article>
+        </section>
+        <div class="listing-controls" aria-label="Прокрутка помещений" role="group" hidden>
+          <button class="listing-controls__arrow" type="button" data-listing-step="-1" aria-label="Предыдущие помещения"><span aria-hidden="true"></span></button>
+          <button class="listing-controls__arrow" type="button" data-listing-step="1" aria-label="Следующие помещения"><span aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-info wrap" id="site" aria-labelledby="site-title">
+      <h2 id="site-title">Территория</h2>
+      <div class="site-features">
+        <article><span class="facility-icon icon icon-entry" aria-hidden="true"></span><h3>Заезд и парковка</h3><p>Четыре въезда на территорию и парковка.</p></article>
+        <article><span class="facility-icon icon icon-shield" aria-hidden="true"></span><h3>Охрана 24/7</h3><p>Круглосуточное видеонаблюдение.</p></article>
+        <article><span class="facility-icon icon icon-lift" aria-hidden="true"></span><h3>Подъём грузов</h3><p>Грузовые лифты и кран-балка.</p></article>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="wrap contacts-grid">
+        <div>
+          <h2 id="contacts-title">Приезжайте<br>на просмотр</h2>
+          <p>Позвоните, чтобы уточнить наличие помещений и договориться о встрече.</p>
+        </div>
+        <div class="contact-data">
+          <a class="contact-phone" href="tel:+79122850046">+7 912 285 00 46</a>
+          <address>Каменск-Уральский, ул. Ленина, 95</address>
+          <a class="button button-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2095%2C%20%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D1%81%D0%BA-%D0%A3%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%A1%D0%B2%D0%B5%D1%80%D0%B4%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F" target="_blank" rel="noopener noreferrer">Построить маршрут <span class="icon icon-up-right" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <a class="brand" href="#main" aria-label="КУОФ, к началу страницы"><img src="assets/logo.png" alt="КУОФ" width="90" height="24"></a>
+      <span>Коммерческая недвижимость</span>
+      <a class="footer-up" href="#main">Наверх <span class="icon icon-up" aria-hidden="true"></span></a>
+    </div>
+  </footer>
+
+</body>
+</html>

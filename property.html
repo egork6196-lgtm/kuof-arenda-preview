@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <title>Помещение — КУОФ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="property.css">
+  <script src="property.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html#main" aria-label="КУОФ, на главную">
+        <img src="assets/logo-dark.png" alt="КУОФ" width="112" height="30">
+        <span>Коммерческая<br>недвижимость</span>
+      </a>
+      <nav class="main-nav" aria-label="Основные разделы">
+        <a href="index.html#catalog" data-return>Помещения</a>
+        <a href="index.html#site">Территория</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+79122850046"><span class="icon icon-phone" aria-hidden="true"></span><span>+7 912 285 00 46</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="property-wrap wrap">
+      <a class="property-back" href="index.html#catalog" data-return>Все помещения</a>
+      <noscript><p>Включите JavaScript, чтобы открыть карточку и галерею помещения.</p></noscript>
+      <div class="property-empty" id="property-empty" hidden>
+        <h1>Карточка не найдена</h1>
+        <p>Выберите помещение в каталоге.</p>
+      </div>
+
+      <article id="property" aria-labelledby="property-title" hidden>
+        <div class="property-top">
+          <header class="property-summary">
+            <p class="property-category" id="property-category"></p>
+            <h1 id="property-title"></h1>
+            <p class="property-location"><span class="icon icon-pin" aria-hidden="true"></span> Каменск-Уральский, ул. Ленина, 95</p>
+            <dl class="property-facts">
+              <div><dt>Тип помещения</dt><dd id="property-type"></dd></div>
+              <div><dt>Площадь и ставка</dt><dd>Уточняются по телефону</dd></div>
+            </dl>
+            <a class="button button-primary" href="tel:+79122850046"><span class="icon icon-phone" aria-hidden="true"></span>Договориться о просмотре</a>
+          </header>
+
+          <section class="gallery" aria-labelledby="gallery-title" data-gallery>
+            <h2 class="sr-only" id="gallery-title">Галерея помещения</h2>
+            <figure>
+              <div class="gallery-stage" data-swipe>
+                <img data-gallery-image width="1200" height="800" alt="" draggable="false">
+              </div>
+              <figcaption class="gallery-bar">
+                <div class="gallery-label">
+                  <span data-gallery-caption></span>
+                  <span class="gallery-kind">Схема для предпросмотра</span>
+                </div>
+                <div class="gallery-controls">
+                  <button class="gallery-arrow" type="button" data-step="-1" aria-label="Предыдущий кадр"><span class="chevron" aria-hidden="true"></span></button>
+                  <span class="gallery-count" data-gallery-count aria-live="polite" aria-atomic="true"></span>
+                  <button class="gallery-arrow" type="button" data-step="1" aria-label="Следующий кадр"><span class="chevron" aria-hidden="true"></span></button>
+                  <button class="gallery-expand" type="button" data-gallery-expand aria-label="Открыть на весь экран"><span class="expand-icon" aria-hidden="true"></span></button>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="gallery-thumbs" data-gallery-thumbs aria-label="Ракурсы" role="group"></div>
+          </section>
+        </div>
+
+        <div class="property-details">
+          <section class="property-description" aria-labelledby="overview-title">
+            <h2 id="overview-title">О помещении</h2>
+            <p id="property-description"></p>
+          </section>
+          <section class="property-specification" aria-labelledby="specs-title">
+            <h2 id="specs-title">Характеристики</h2>
+            <dl id="property-specs" class="property-facts"></dl>
+          </section>
+          <section aria-labelledby="terms-title">
+            <h2 id="terms-title">Условия аренды</h2>
+            <p>Уточните стоимость, срок аренды и наличие подходящих помещений по телефону.</p>
+          </section>
+          <section aria-labelledby="logistics-title">
+            <h2 id="logistics-title">Заезд и логистика</h2>
+            <p id="property-logistics"></p>
+            <a class="property-text-link" href="index.html#site">Общие условия на территории</a>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <a class="brand" href="index.html#main" aria-label="КУОФ, на главную"><img src="assets/logo.png" alt="КУОФ" width="90" height="24"></a>
+      <span>Коммерческая недвижимость</span>
+      <a class="footer-up" href="#main">Наверх <span class="icon icon-up" aria-hidden="true"></span></a>
+    </div>
+  </footer>
+
+  <dialog class="gallery-lightbox" data-lightbox aria-label="Галерея на весь экран">
+    <div class="lightbox-inner">
+      <div class="lightbox-header">
+        <span data-lightbox-title></span>
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Закрыть полноэкранный просмотр" autofocus><span class="icon icon-close" aria-hidden="true"></span></button>
+      </div>
+      <figure class="lightbox-figure">
+        <div class="lightbox-stage" data-swipe>
+          <img data-gallery-image width="1200" height="800" alt="" draggable="false">
+        </div>
+        <figcaption class="gallery-bar">
+          <div class="gallery-label">
+            <span data-gallery-caption></span>
+            <span class="gallery-kind">Схема для предпросмотра</span>
+          </div>
+          <div class="gallery-controls">
+            <button class="gallery-arrow" type="button" data-step="-1" aria-label="Предыдущий кадр"><span class="chevron" aria-hidden="true"></span></button>
+            <span class="gallery-count" data-gallery-count aria-live="polite" aria-atomic="true"></span>
+            <button class="gallery-arrow" type="button" data-step="1" aria-label="Следующий кадр"><span class="chevron" aria-hidden="true"></span></button>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </dialog>
+</body>
+</html>
